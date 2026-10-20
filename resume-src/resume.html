@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Lee Jian Lin - Software Developer Resume</title>
+<style>
+  /* ATS-friendly: one column, real text, standard headings, no tables/images/icons.
+     Edit this file, then re-export to PDF (see README.md in this folder). */
+  @page { size: A4; margin: 13mm 15mm; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 9.6pt; line-height: 1.34; color: #111; margin: 0; }
+  h1 { font-size: 21pt; margin: 0 0 1mm; letter-spacing: .3px; }
+  .headline { font-size: 11pt; font-weight: bold; margin: 0 0 1.5mm; color: #1a3f6b; }
+  .contact { margin: 0; font-size: 9.2pt; }
+  h2 { font-size: 10.4pt; text-transform: uppercase; letter-spacing: .6px; margin: 4.2mm 0 1.8mm; padding-bottom: .8mm; border-bottom: 1.2px solid #1a3f6b; color: #1a3f6b; break-after: avoid; }
+  p { margin: 0 0 1.2mm; }
+  .job { margin-bottom: 2.6mm; }
+  .job-head { display: flex; justify-content: space-between; gap: 8mm; break-after: avoid; }
+  .job-title { font-weight: bold; }
+  .job-date { white-space: nowrap; }
+  .job-org { font-style: italic; margin-bottom: .8mm; break-after: avoid; }
+  ul { margin: .6mm 0 0; padding-left: 4.4mm; }
+  li { margin-bottom: .7mm; break-inside: avoid; }
+  .skills p { margin-bottom: .9mm; }
+  a { color: inherit; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<h1>Lee Jian Lin</h1>
+<p class="headline">Software Developer | Fullstack Developer</p>
+<p class="contact">Johor, Malaysia | +60 18-662 6200 | jianlin2003@gmail.com</p>
+<p class="contact">linkedin.com/in/jianlinlee | github.com/jianlin23 | jianlin23.github.io/resume</p>
+
+<h2>Professional Summary</h2>
+<p>Software Developer with hands-on experience in ERP integration, C#/.NET APIs, SQL Server and RPA, delivering a multi-country NetSuite rollout from requirements through go-live and hypercare. Redesigned a high-volume transfer order process for 450+ outlets, cutting daily documents from 500+ to under 100. Also a freelance web developer with client websites delivered, and a Bachelor's graduate in Software Systems Development (CGPA 3.98). Seeking a fullstack development role (hybrid); also open to freelance projects.</p>
+
+<h2>Technical Skills</h2>
+<div class="skills">
+<p><b>Languages:</b> C#, Java, PHP, Python, Kotlin, JavaScript, HTML, CSS, SQL, Solidity, C</p>
+<p><b>Backend &amp; APIs:</b> .NET / ASP.NET, Entity Framework, REST APIs, JSON, OAuth 2.0, Token-Based Authentication (TBA)</p>
+<p><b>Databases:</b> Microsoft SQL Server (SSMS, stored procedures, functions, query tuning), MySQL</p>
+<p><b>ERP &amp; Integration:</b> NetSuite, NetSuite Analytics Data Warehouse (NSAW), Microsoft Dynamics 365 Business Central, system architecture, real-time and batch integration</p>
+<p><b>Automation &amp; AI:</b> UiPath (unattended and attended bots), AI-assisted development (Claude Code, parallel subagents), job scheduling</p>
+<p><b>Frontend:</b> HTML, CSS, JavaScript, Material Design, responsive web design, web hosting and deployment</p>
+<p><b>Tools &amp; Practices:</b> Git, Agile, SIT / UAT support, technical documentation</p>
+</div>
+
+<h2>Work Experience</h2>
+
+<div class="job">
+  <div class="job-head"><span class="job-title">Software Developer, eco-shop Malaysia</span><span class="job-date">Jul 2025 - Present</span></div>
+  <div class="job-org">Segamat, Johor, Malaysia</div>
+  <ul>
+    <li>Delivered ERP integration and automation for a multi-country NetSuite rollout, working with business users and ERP consultants from requirements through go-live and hypercare.</li>
+    <li>Supported technical go-live, keeping daily data stable and tallied between the new and legacy ERP; built multi-country ERP integrations with daily reconciliation.</li>
+    <li>Redesigned transaction document flows for 450+ outlets after high document volume broke NetSuite's GL impact calculation: moved routine outlet orders to a custom TO Request form feeding NSAW reporting, and converted daily shipments into standard TOs with direct fulfillment, batched at 500 item lines with outlet codes nested in each line's JSON.</li>
+    <li>Cut daily TO documents from 500+ to under 100; load-tested NetSuite with production data cloned across multiple locations.</li>
+    <li>Built an integration platform: split the core API into a shared class library and an API layer so all tools share one codebase, plus a developer portal for API user registration, reconciliation and monitoring.</li>
+    <li>Built a configurable API caller (a stored procedure supplies the request URL and body; OAuth 2.0 or TBA authentication and sync or async mode set by configuration), a poller for async results, and a job scheduler with retries, timeouts and run history that replaced Windows Task Scheduler.</li>
+    <li>Applied AI-assisted development: project context and coding conventions in markdown files, parallel subagents (one implements while the main session plans and reviews), and AI plugins for planning, workflows and UI design.</li>
+    <li>Resolved support tickets (user setup, permissions, approval workflows, access issues), worked with the vendor on custom features, and supported UiPath bots after go-live.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head"><span class="job-title">Information Technology Intern, eco-shop Malaysia</span><span class="job-date">Feb 2025 - Jul 2025</span></div>
+  <div class="job-org">Jementah, Johor, Malaysia</div>
+  <ul>
+    <li>Supported enterprise-wide digital transformation through API integration and RPA automation, connecting upstream ERP systems with WMS, B2B, POS and legacy ERP.</li>
+    <li>Designed and developed C# / .NET APIs (Entity Framework, SQL Server) for master and transactional data, including stock adjustments, transfer orders, purchase returns, inventory transfers, item fulfillment and shipment closures.</li>
+    <li>Built JSON request/response handling, token-based authentication and business rule validation across multiple regional ERP systems, supporting real-time REST integration and scheduled batch processing.</li>
+    <li>Created and optimized stored procedures and functions, including performance tuning for legacy ERP; implemented error logging and data recovery; wrote SQL scripts in SSMS for validation, reconciliation and reporting.</li>
+    <li>Developed UiPath unattended bots for scheduled production runs and attended bots for ad-hoc tasks, using modular components and resolving UI element conflicts so bots ran reliably across environments.</li>
+    <li>Supported SIT and UAT in an Agile team, used Git with structured branching, and documented API architecture, RPA workflows, technical SOPs and recovery procedures.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head"><span class="job-title">Freelance Web Developer, CGS International Securities Group</span><span class="job-date">Mar 2025 - May 2025</span></div>
+  <div class="job-org">Malaysia</div>
+  <ul>
+    <li>Designed and developed the official ASEAN Investment Challenge 2025 website (aseaninvestmentchallenge.com) with a responsive, user-friendly interface across all devices.</li>
+    <li>Implemented front-end design for event information and content updates; managed website hosting and deployment for reliable uptime and performance.</li>
+    <li>Worked closely with event organizers to reflect the brand identity.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head"><span class="job-title">Freelance Web Developer, FiLLiP Group</span><span class="job-date">Jan 2024 - Oct 2026</span></div>
+  <div class="job-org">Kuala Lumpur, Malaysia</div>
+  <ul>
+    <li>Developed the official company website for Fillip Sdn. Bhd. (fillip-group.com).</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head"><span class="job-title">E-commerce Business Owner, Shopee and Lazada (ytlin2ndLifeTech)</span><span class="job-date">Nov 2017 - Sep 2026</span></div>
+  <div class="job-org">Johor, Malaysia</div>
+  <ul>
+    <li>Run and organize an online shop selling IT-based components and services.</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="job">
+  <div class="job-head"><span class="job-title">Bachelor's Degree, Information Technology (Honours) in Software Systems Development</span><span class="job-date">Jun 2023 - Jun 2025</span></div>
+  <div class="job-org">Tunku Abdul Rahman University of Management and Technology (TAR UMT), Johor Branch</div>
+  <ul>
+    <li>CGPA 3.98; President's List: 202305, 202309, 202401, 202405, 202409</li>
+  </ul>
+</div>
+<div class="job">
+  <div class="job-head"><span class="job-title">Diploma, Information Technology</span><span class="job-date">Jun 2021 - Jun 2023</span></div>
+  <div class="job-org">Tunku Abdul Rahman University College</div>
+  <ul>
+    <li>CGPA 3.87</li>
+  </ul>
+</div>
+
+<h2>Awards &amp; Competitions</h2>
+<ul>
+  <li>First Runner Up, CodeCraft AI Integration Challenge (CCAIIC) 2024, TAR UMT (30 Nov 2024)</li>
+  <li>Second Runner-up, GPT Hero 2025 (Computing Category), TAR UMT Johor Branch (10 May 2025)</li>
+  <li>Ispark International Pitching Competition (2024), TAR UMT</li>
+  <li>Tech 4 Good Challenge (2024), Vitrox Academy and UTAR</li>
+</ul>
+
+<h2>Certifications</h2>
+<ul>
+  <li>CCNA: Enterprise Networking, Security, and Automation, Cisco Networking Academy</li>
+  <li>CCNA: Switching, Routing, and Wireless Essentials, Cisco Networking Academy (2024)</li>
+  <li>CCNA: Introduction to Networks, Cisco Networking Academy (2023)</li>
+  <li>AWS Academy Graduate: Cloud Architecting, Amazon Web Services Training and Certification</li>
+  <li>AWS Academy Cloud Foundations (2024)</li>
+  <li>AI Appreciate Badge (AI untuk Rakyat) and AI Aware Certificate, MyDigital and Intel (2024)</li>
+</ul>
+
+<h2>Languages</h2>
+<p>Chinese (Native or Bilingual) | English (Professional Working) | Malay (Professional Working)</p>
+
+</body>
+</html>
